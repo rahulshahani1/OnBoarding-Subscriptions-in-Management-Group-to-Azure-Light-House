@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "managedByName": {
+            "value": "Service Provider Tenant Name"
+        },
+        "managedByDescription": {
+            "value": "Description"
+        },
+        "managedByTenantId": {
+            "value": "Please update the Tenant ID of the Service provider"
+        },
+        "managedByAuthorizations": {
+            "value": [
+                {
+                    "principalId": "Object ID of the Security Group",
+                    "principalIdDisplayName": "Security Group Name",
+                    "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
+                },
+                {
+                    "principalId": "Object ID of the Security Group",
+                    "principalIdDisplayName": "Security Group Name",
+                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+                }                
+            ]
+        }
+    }
+}
+
+
